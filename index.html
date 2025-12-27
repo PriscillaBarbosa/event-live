@@ -1,13 +1,21 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>event-live</title>
+    <title>EventLive - Mural</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header>
+      <h1>EventLive 💬</h1>
+      <button id="btn-refresh">🔄 Atualizar</button>
+    </header>
+
+    <main>
+      <div id="loader" class="loader">Carregando comentários...</div>
+      <div id="feed-container" class="grid"></div>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
