@@ -1,6 +1,8 @@
-import './style.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './styles/main.css';
 import { buscarComentarios } from './services/api.js';
-import { renderizarFeed, toggleLoading } from './ui/card.js';
+import { renderizarFeed } from './components/CommentCard.js';
+import { toggleLoading } from './components/Loader.js';
 
 async function iniciarMural() {
     console.log("Iniciando mural de comentários...");
